@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\denizv\Downloads\AMGX-main\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\aggregation_amg_level.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\coarse_A_generator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\hybrid_coarse_A_generator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\low_deg_coarse_A_generator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\thrust_coarse_A_generator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\adaptive.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\agg_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dummy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\geo_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multi_pairwise.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\parallel_greedy_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\selector_kernels.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\serial_greedy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\size2_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\size4_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\size8_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_config.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_level.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_signal.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_c.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_c_common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_cublas.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_cusolverDn.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_cusparse.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_eig_c.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_lapack.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_timer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\io.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\api_version.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\auxdata.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\blas.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\classical_amg_level.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distance1.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distance2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\interpolator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multipass.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\aggressive_hmis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\aggressive_pmis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cr.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dummy_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\hmis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pmis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\rs.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\affinity.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\strength.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\strength_base.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\absolute.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\combined_rel_ini_abs.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\convergence.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\relative_ini.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\relative_max.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\core.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\csr_multiply.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\csr_multiply_detail.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cg_cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cg_flex_cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\convergence_analysis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\f_cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\fixed_cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\v_cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\w_cycle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\determinism_checker.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\device_properties.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_mpi_gpudirect.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_mpi_hostbuffer_stream.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors1.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors2.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors3.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors4.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_arranger.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_comms.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_io.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_manager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\eigensolvers.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\arnoldi_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\eigenvector_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\jacobi_davidson_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\lanczos_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\lobpcg_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multivector_operations.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\qr.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\single_iteration_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\subspace_iteration_eigensolver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\energymin_amg_level.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\em.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\em_interpolator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\em_selector.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\error.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\gaussian_elimination.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\global_thread_handle.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\hash_workspace.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix_analysis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\coloring_utils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\greedy_min_max_2ring.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\greedy_recolor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\locally_downwind.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix_coloring.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\min_max.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\min_max_2ring.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multi_hash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\parallel_greedy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\round_robin.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\serial_greedy_bfs.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\uniform.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix_io.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\memory_info.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\misc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multiply.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\norm.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\deflated_multiply_operator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pagerank_operator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\shifted_operator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\solve_operator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\solver_operator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\profile.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\readers.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\resources.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\binormalization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\diagonal_symmetric.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\nbinormalization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\scaler.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\algebraic_multigrid_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\bicgstab_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\block_jacobi_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cf_jacobi_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cg_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cheb_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\chebyshev_poly.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dense_lu_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dummy_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\fgmres_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\fixcolor_gauss_seidel_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\gauss_seidel_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\gmres_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\idr_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\idrmsync_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\jacobi_l1_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\kaczmarz_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\kpz_polynomial_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multicolor_dilu_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multicolor_gauss_seidel_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multicolor_ilu_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pbicgstab_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pcg_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pcgf_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\polynomial_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\user_solver.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\sort.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\test_utils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\testframework.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\thread_manager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\transpose.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\truncate.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\unit_test.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\version.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{BFA1CAC0-3230-3B83-AB21-2BD29E0DFEB8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

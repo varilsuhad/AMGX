@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithTraces|x64">
+      <Configuration>RelWithTraces</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\denizv\Downloads\AMGX-main\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\ZERO_CHECK.vcxproj">
+      <Project>{8657DD7E-D931-3752-8B02-8378C01B8CE0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx.vcxproj">
+      <Project>{86D20987-9E71-3868-9B9A-4CF340300533}</Project>
+      <Name>amgx</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\examples\amgx_capi.vcxproj">
+      <Project>{109C73A3-2368-312A-8CC6-FEF9F4172EA0}</Project>
+      <Name>amgx_capi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.vcxproj">
+      <Project>{209C6775-6386-3CD4-BAC3-B28BB3845B12}</Project>
+      <Name>amgx_libs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\src\amgx_tests_launcher.vcxproj">
+      <Project>{5350E078-25EB-3EFF-9665-BC318125630F}</Project>
+      <Name>amgx_tests_launcher</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\src\amgx_tests_library.vcxproj">
+      <Project>{085D50B9-9293-3AC0-9BEF-BF33AEB97C73}</Project>
+      <Name>amgx_tests_library</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\src\amgx_tests_libs.vcxproj">
+      <Project>{8EEF0C5C-FD26-39AA-8F2B-6DB0C7E5CA13}</Project>
+      <Name>amgx_tests_libs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgxsh.vcxproj">
+      <Project>{1C27529B-D5CD-3C37-8802-729AF2F823E1}</Project>
+      <Name>amgxsh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\src\copy_configs_core.vcxproj">
+      <Project>{5C2D0A77-D1C3-3A4D-9246-89522E2AB4FC}</Project>
+      <Name>copy_configs_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\examples\generate_poisson.vcxproj">
+      <Project>{6B379EB9-6178-3112-8B89-EB15E0A3037D}</Project>
+      <Name>generate_poisson</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\examples\generate_poisson7_dist_renum.vcxproj">
+      <Project>{2ED6C8B5-3F32-38F0-B71F-3761062BC692}</Project>
+      <Name>generate_poisson7_dist_renum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithTraces|x64">
+      <Configuration>RelWithTraces</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C27529B-D5CD-3C37-8802-729AF2F823E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>amgxsh</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">amgxsh.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">amgxsh</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">amgxsh.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">amgxsh</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\Profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">amgxsh.dir\Profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">amgxsh</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\RelWithTraces\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">amgxsh.dir\RelWithTraces\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">amgxsh</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Debug";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;NOMINMAX;THRUST_CUB_WRAPPED_NAMESPACE=amgx;WIN32;RAPIDJSON_DEFINED;THRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP;THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA;CMAKE_INTDIR="Debug";amgxsh_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_90,code=[compute_90,sm_90] --extended-lambda --Werror cross-execution-space-call -Xcompiler="/EHsc -Zi -Ob0 /EHsc /bigobj -openmp"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MDd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\nvJitLink.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublasLt.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/Debug/amgxsh.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/Debug/amgxsh.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Release";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CMAKE_INTDIR=\"Release\";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;NOMINMAX;THRUST_CUB_WRAPPED_NAMESPACE=amgx;WIN32;RAPIDJSON_DEFINED;THRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP;THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA;CMAKE_INTDIR="Release";amgxsh_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_90,code=[compute_90,sm_90] --extended-lambda --Werror cross-execution-space-call -Xcompiler="/EHsc -Ob2 /EHsc /bigobj -openmp"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\nvJitLink.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublasLt.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/Release/amgxsh.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/Release/amgxsh.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Profile";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CMAKE_INTDIR=\"Profile\";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;NOMINMAX;THRUST_CUB_WRAPPED_NAMESPACE=amgx;WIN32;RAPIDJSON_DEFINED;THRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP;THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA;CMAKE_INTDIR="Profile";amgxsh_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_90,code=[compute_90,sm_90] --extended-lambda --Werror cross-execution-space-call -Xcompiler="/EHsc /EHsc /bigobj -openmp"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization></Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\nvJitLink.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublasLt.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/Profile/amgxsh.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/Profile/amgxsh.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary></RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="RelWithTraces";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;CMAKE_INTDIR=\"RelWithTraces\";amgxsh_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;NDEBUG;NOMINMAX;THRUST_CUB_WRAPPED_NAMESPACE=amgx;WIN32;RAPIDJSON_DEFINED;THRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP;THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA;CMAKE_INTDIR="RelWithTraces";amgxsh_EXPORTS</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++14 --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_90,code=[compute_90,sm_90] --extended-lambda --Werror cross-execution-space-call -Xcompiler="/EHsc /EHsc /bigobj -openmp"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization></Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\denizv\Downloads\AMGX-main\external\rapidjson\include;C:\Users\denizv\Downloads\AMGX-main\src\..\include;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\..\..;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusolver.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cusparse.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\nvJitLink.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64\cublasLt.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/RelWithTraces/amgxsh.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/RelWithTraces/amgxsh.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\denizv\Downloads\AMGX-main\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">Building Custom Rule C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/denizv/Downloads/AMGX-main -BC:/Users/denizv/Downloads/AMGX-main/VisualStudioProject --check-stamp-file C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindCUDAToolkit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindMPI.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCUDACompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\3.30.1\CMakeSystem.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\dependencies\cub\cub\cmake\cub-header-search.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config-version.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-config.cmake;C:\Users\denizv\Downloads\AMGX-main\thrust\thrust\cmake\thrust-header-search.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithTraces|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\aggregation_amg_level.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\coarse_A_generator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\hybrid_coarse_A_generator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\low_deg_coarse_A_generator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\thrust_coarse_A_generator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\adaptive.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\agg_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dummy.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\geo_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multi_pairwise.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\parallel_greedy_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\selector_kernels.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\serial_greedy.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\size2_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\size4_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\size8_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_config.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_level.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_signal.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amg_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_c.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_c_common.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_cublas.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_cusolverDn.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_cusparse.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_eig_c.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_lapack.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\amgx_timer.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\io.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\api_version.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\auxdata.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\blas.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\classical_amg_level.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\common.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distance1.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distance2.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\interpolator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multipass.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\aggressive_hmis.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\aggressive_pmis.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cr.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dummy_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\hmis.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pmis.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\rs.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\affinity.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\strength.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\strength_base.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\absolute.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\combined_rel_ini_abs.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\convergence.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\relative_ini.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\relative_max.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\core.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\csr_multiply.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\csr_multiply_detail.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cg_cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cg_flex_cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\convergence_analysis.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\f_cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\fixed_cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\v_cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\w_cycle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\determinism_checker.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\device_properties.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_mpi_gpudirect.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_mpi_hostbuffer_stream.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors1.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors2.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors3.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\comms_visitors4.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_arranger.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_comms.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_io.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\distributed_manager.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\eigensolvers.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\arnoldi_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\eigenvector_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\jacobi_davidson_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\lanczos_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\lobpcg_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multivector_operations.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\qr.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\single_iteration_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\subspace_iteration_eigensolver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\energymin_amg_level.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\em.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\em_interpolator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\em_selector.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\error.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\gaussian_elimination.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\global_thread_handle.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\hash_workspace.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix_analysis.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\coloring_utils.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\greedy_min_max_2ring.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\greedy_recolor.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\locally_downwind.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix_coloring.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\min_max.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\min_max_2ring.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multi_hash.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\parallel_greedy.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\round_robin.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\serial_greedy_bfs.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\uniform.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\matrix_io.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\memory_info.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\misc.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multiply.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\norm.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\deflated_multiply_operator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pagerank_operator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\shifted_operator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\solve_operator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\solver_operator.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\profile.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\readers.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\resources.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\binormalization.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\diagonal_symmetric.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\nbinormalization.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\scaler.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\algebraic_multigrid_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\bicgstab_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\block_jacobi_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cf_jacobi_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cg_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\cheb_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\chebyshev_poly.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dense_lu_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\dummy_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\fgmres_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\fixcolor_gauss_seidel_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\gauss_seidel_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\gmres_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\idr_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\idrmsync_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\jacobi_l1_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\kaczmarz_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\kpz_polynomial_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multicolor_dilu_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multicolor_gauss_seidel_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\multicolor_ilu_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pbicgstab_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pcg_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\pcgf_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\polynomial_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\user_solver.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\sort.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\test_utils.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\testframework.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\thread_manager.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\transpose.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\truncate.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\unit_test.obj" />
+    <Object Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.dir\$(Configuration)\version.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\ZERO_CHECK.vcxproj">
+      <Project>{8657DD7E-D931-3752-8B02-8378C01B8CE0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\denizv\Downloads\AMGX-main\VisualStudioProject\amgx_libs.vcxproj">
+      <Project>{209C6775-6386-3CD4-BAC3-B28BB3845B12}</Project>
+      <Name>amgx_libs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.targets" />
+  </ImportGroup>
+</Project>

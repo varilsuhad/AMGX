@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0} = {8657DD7E-D931-3752-8B02-8378C01B8CE0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj", "{8C919F80-F578-31D6-92A1-788A603595A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36} = {C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0} = {8657DD7E-D931-3752-8B02-8378C01B8CE0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\\ZERO_CHECK.vcxproj", "{8657DD7E-D931-3752-8B02-8378C01B8CE0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		Profile|x64 = Profile|x64
+		RelWithTraces|x64 = RelWithTraces|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.Debug|x64.ActiveCfg = Debug|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.Debug|x64.Build.0 = Debug|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.Release|x64.ActiveCfg = Release|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.Release|x64.Build.0 = Release|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.Profile|x64.ActiveCfg = Profile|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.Profile|x64.Build.0 = Profile|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.RelWithTraces|x64.ActiveCfg = RelWithTraces|x64
+		{C1F89F2C-9D5C-359F-99EA-CA4D4964BD36}.RelWithTraces|x64.Build.0 = RelWithTraces|x64
+		{8C919F80-F578-31D6-92A1-788A603595A5}.Debug|x64.ActiveCfg = Debug|x64
+		{8C919F80-F578-31D6-92A1-788A603595A5}.Release|x64.ActiveCfg = Release|x64
+		{8C919F80-F578-31D6-92A1-788A603595A5}.Profile|x64.ActiveCfg = Profile|x64
+		{8C919F80-F578-31D6-92A1-788A603595A5}.RelWithTraces|x64.ActiveCfg = RelWithTraces|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.Debug|x64.ActiveCfg = Debug|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.Debug|x64.Build.0 = Debug|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.Release|x64.ActiveCfg = Release|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.Release|x64.Build.0 = Release|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.Profile|x64.ActiveCfg = Profile|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.Profile|x64.Build.0 = Profile|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.RelWithTraces|x64.ActiveCfg = RelWithTraces|x64
+		{8657DD7E-D931-3752-8B02-8378C01B8CE0}.RelWithTraces|x64.Build.0 = RelWithTraces|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CB96123-8634-3414-8455-308C89D3ABBD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

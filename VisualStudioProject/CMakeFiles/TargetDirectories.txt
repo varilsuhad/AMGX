@@ -1,0 +1,17 @@
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/amgx_libs.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/amgx.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/amgxsh.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/INSTALL.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/ALL_BUILD.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/ZERO_CHECK.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/thrust/CMakeFiles/INSTALL.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/thrust/CMakeFiles/ALL_BUILD.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/src/CMakeFiles/copy_configs_core.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/src/CMakeFiles/amgx_tests_libs.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/src/CMakeFiles/amgx_tests_library.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/src/CMakeFiles/amgx_tests_launcher.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/src/CMakeFiles/INSTALL.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/examples/CMakeFiles/amgx_capi.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/examples/CMakeFiles/generate_poisson.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/examples/CMakeFiles/generate_poisson7_dist_renum.dir
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/examples/CMakeFiles/INSTALL.dir

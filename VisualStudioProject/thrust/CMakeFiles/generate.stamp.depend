@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/lib/cmake/libcudacxx/libcudacxx-config-version.cmake
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/lib/cmake/libcudacxx/libcudacxx-config.cmake
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/lib/cmake/libcudacxx/libcudacxx-header-search.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/CMakeLists.txt
+C:/Users/denizv/Downloads/AMGX-main/thrust/cmake/ThrustAddSubdir.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/thrust/cmake/thrust-config-version.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/thrust/cmake/thrust-config.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/thrust/cmake/thrust-header-search.cmake

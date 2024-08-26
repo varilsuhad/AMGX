@@ -1,0 +1,11 @@
+.DS_Store
+/build*/
+.logamgx
+*.cmake
+plugin_config.cu
+*.sublime-project
+*.sublime-workspace
+core/src/version.cu
+ci/docker/
+install
+Release

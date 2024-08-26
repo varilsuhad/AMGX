@@ -1,0 +1,43 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCUDAInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/NVIDIA-CUDA.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/NVIDIA.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindCUDAToolkit.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindMPI.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindOpenMP.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-NVIDIA-CUDA.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+C:/Users/denizv/Downloads/AMGX-main/CMakeLists.txt
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/3.30.1/CMakeCCompiler.cmake
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/3.30.1/CMakeCUDACompiler.cmake
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/3.30.1/CMakeCXXCompiler.cmake
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/3.30.1/CMakeRCCompiler.cmake
+C:/Users/denizv/Downloads/AMGX-main/VisualStudioProject/CMakeFiles/3.30.1/CMakeSystem.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/dependencies/cub/cub/cmake/cub-config-version.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/dependencies/cub/cub/cmake/cub-config.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/dependencies/cub/cub/cmake/cub-header-search.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/thrust/cmake/thrust-config-version.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/thrust/cmake/thrust-config.cmake
+C:/Users/denizv/Downloads/AMGX-main/thrust/thrust/cmake/thrust-header-search.cmake
